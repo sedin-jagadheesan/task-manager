@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+   
+    <div id="homePage">
+      <h1>Task Manager</h1>
+      <p> Welcome To Your Task Manager </p>
+      <button id="goToTask">Create Task</button>
+    </div>
+
+   
+    <div id="taskPage" style="display: none;">
+      <h2>Create Your Task</h2>
+
+      <form id="taskForm">
+        <input type="text" id="title" placeholder="Task Title" />
+        <small id="error"></small>
+
+        <select id="priority">
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+          <option value="Low">Low</option>
+        </select>
+
+        <textarea id="description" placeholder="Description"></textarea>
+
+        <button id="submitBtn" disabled>Save Task</button>
+      </form>
+
+      <h3>Your Tasks</h3>
+      <ul id="taskList"></ul>
+
+      <button id="backHome">⬅ Back</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
